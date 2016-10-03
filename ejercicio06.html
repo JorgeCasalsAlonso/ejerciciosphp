@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Ejercicio 06</title>
+	</head>
+	<body>
+		<h1>Registro de libros</h1>
+		<form method="post" action="ejercicio06.php"> 
+			<label>T&iacute;tulo</label><input type="text" value="" name="titulo" /> <br/>
+			G&eacute;nero:<br/>
+			<select name="género">
+				<optgroup label="géneros">
+					<option>Fantas&iacute;a</option>
+					<option>Aventuras</option>
+					<option>Ciencia Ficci&oacute;n</option>
+					<option>Polic&iacute;aca</option>
+					<option>Er&oacute;tica</option>
+					<option>Infantil</option>
+				</optgroup>
+			</select>
+			<br/>
+			<label>Nombre de usuario</label><input type="text" value="" name="usuario" /> <br/>
+			<label>Contrase&ntilde;a</label><input type="password" value="" name="password" /> <br/>
+			Sexo: <br />
+			<input type="radio" name="sexo" value="male" checked> Var&oacute;n <br/>
+        	<input type="radio" name="sexo" value="female"> Mujer<br/> 
+        	Indica qu&eacute; g&eacute;neros sueles leer: <br/>
+        	<input type="checkbox" name="generos[]" value="deporte">Fantas&iacute;a<br/>
+        	<input type="checkbox" name="generos[]" value="musica">Aventuras<br/>     	
+        	<input type="checkbox" name="generos[]" value="musica">Ciencia Ficci&oacute;n<br/>      	
+        	<input type="checkbox" name="generos[]" value="cine">Polic&iacute;aca<br/> 
+        	<input type="checkbox" name="generos[]" value="cine">Er&oacute;tica<br/> 
+        	<input type="checkbox" name="generos[]" value="cine">Infantil<br/> 
+        	<input type="submit" value="enviar"> 
+		</form>
+	</body>
+</html>
