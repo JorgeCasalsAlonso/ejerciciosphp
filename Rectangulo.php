@@ -39,4 +39,9 @@ class Rectangulo
     {
         $this->_altura = $altura;
     }
+
+    public function __toString()
+    {
+        return "Rectángulo de " . $this->_altura . " x " . $this->_base . ".";
+    }
 }
