@@ -1,20 +1,20 @@
 <html>
 	<head>
-		<title>Ejercicio 06</title>
+		<title>Formulario</title>
 	</head>
 	<body>
 		<h1>Registro de libros</h1>
-		<form method="post" action="ejercicio06.php"> 
+		<form method="post" action="Servlet"> 
 			<label>T&iacute;tulo</label><input type="text" value="" name="titulo" /> <br/>
 			G&eacute;nero:<br/>
 			<select name="género">
-				<optgroup label="géneros">
-					<option>Fantas&iacute;a</option>
-					<option>Aventuras</option>
-					<option>Ciencia Ficci&oacute;n</option>
-					<option>Polic&iacute;aca</option>
-					<option>Er&oacute;tica</option>
-					<option>Infantil</option>
+				<optgroup label="g&eacute;neros">
+					<option value = "Fantasia">Fantas&iacute;a</option>
+					<option value = "Aventuras">Aventuras</option>
+					<option value = "Ciencia Ficcion">Ciencia Ficci&oacute;n</option>
+					<option value = "Policiaca">Polic&iacute;aca</option>
+					<option value = "Erotica">Er&oacute;tica</option>
+					<option value = "Infantil">Infantil</option>
 				</optgroup>
 			</select>
 			<br/>
@@ -24,13 +24,13 @@
 			<input type="radio" name="sexo" value="male" checked> Var&oacute;n <br/>
         	<input type="radio" name="sexo" value="female"> Mujer<br/> 
         	Indica qu&eacute; g&eacute;neros sueles leer: <br/>
-        	<input type="checkbox" name="generos[]" value="deporte">Fantas&iacute;a<br/>
-        	<input type="checkbox" name="generos[]" value="musica">Aventuras<br/>     	
-        	<input type="checkbox" name="generos[]" value="musica">Ciencia Ficci&oacute;n<br/>      	
-        	<input type="checkbox" name="generos[]" value="cine">Polic&iacute;aca<br/> 
-        	<input type="checkbox" name="generos[]" value="cine">Er&oacute;tica<br/> 
-        	<input type="checkbox" name="generos[]" value="cine">Infantil<br/> 
+        	<input type="checkbox" name="generos[]" value="Fantasia">Fantas&iacute;a<br/>
+        	<input type="checkbox" name="generos[]" value="Aventuras">Aventuras<br/>     	
+        	<input type="checkbox" name="generos[]" value="Ciencia ficcion">Ciencia Ficci&oacute;n<br/>      	
+        	<input type="checkbox" name="generos[]" value="Policiaca">Polic&iacute;aca<br/> 
+        	<input type="checkbox" name="generos[]" value="Erotica">Er&oacute;tica<br/> 
+        	<input type="checkbox" name="generos[]" value="Infantil">Infantil<br/> 
         	<input type="submit" value="enviar"> 
-		</form>
+	</form>
 	</body>
 </html>
