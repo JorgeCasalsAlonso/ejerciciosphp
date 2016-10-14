@@ -10,7 +10,7 @@
             <input type="submit" value="Enviar"> 
         </form>-->
         <?php
-        require_once 'app.php';
+        require_once 'App.php';
         if (count($_POST) != 0) {
             echo "<h1>Datos recibidos</h1>";
             $app = new App($_POST);

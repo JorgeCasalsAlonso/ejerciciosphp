@@ -9,10 +9,10 @@
             <label>N&uacute;mero de tel&eacute;fono</label><input type="text" value="" name="telefono" /> <br/>
             <input type="submit" value="Enviar">    
         <?php
-        require_once 'app.php';
+        require_once 'App.php';
         if (count($_POST) != 0) {
             $app = new App($_POST);
-            require_once 'usuario.php';
+            require_once 'Usuario.php';
             $datos = $app-> __getUsuario()->__getNombre() . "-" . $app->__getUsuario()->__getTelefono();
             if (!empty($_POST["lista"])) {
                 $array = explode(";", $_POST["lista"]);
